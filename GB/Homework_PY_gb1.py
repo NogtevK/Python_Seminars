@@ -66,9 +66,21 @@ elif number_of_quarter == 3:
 else:
     print('x∈(0,∞) u y∈(0,-∞)')
 
+# 5- Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
+
+# Пример:
+
+# - A (3,6); B (2,1) -> 5.09
+# - A (7,-5); B (1,-1) -> 7.21
 
 
+print('Введите, через пробел координаты 1-ой точки: ')
+x_number1, y_number1 = map(int,input().split(' '))
+print('Введите, через пробел координаты 2-ой точки: ')
+x_number2, y_number2 = map(int,input().split(' '))
 
+distance = float(((x_number2 - x_number1)**2 + (y_number2 - y_number1)**2) ** 0.5)
+print(int(distance * 100)/100)
 
 
 
