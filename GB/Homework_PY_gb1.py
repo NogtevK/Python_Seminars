@@ -2,10 +2,30 @@
 # Дополнительно: можете проверить, что это действительно число, и что это действительно входит в нужный диапазон
 
 number_of_day = input('Введите день недели от 1 до 7. Вдруг выходной')
+
 if number_of_day.isdigit():
     num = int(number_of_day)
     if num > 7 or num<1:
-        print('это не цифра')
+        print('это не цифра, обозначающая день недели')
+    elif num > 5:
+        print('Да! Выходной.')
+    else:
+        print('Нет! Рабочий.')
+else:
+    print('это не цифра')
+        
+        
+
+
+
+
+
+
+
+
+
+
+
 
 # def give_int(input_string):
 #     while True:
