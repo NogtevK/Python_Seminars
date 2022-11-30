@@ -10,19 +10,19 @@ for i in range(n):
 
 
 # 2. Напишите программу, в которой пользователь будет задавать две строки, а программа - определять количество вхождений одной строки в другой.
-text = list(input('Введите текст: '))
-text2 = list(input('Введите текст 2: '))
-print(text, text2)
-num = 0
-for i in range(len(text2)):
-    for j in range(len(text)):
-        if text[j]==text2[i]:
-           num+=1
-print(num)
+# text = list(input('Введите текст: '))
+# text2 = list(input('Введите текст 2: '))
+# print(text, text2)
+# num = 0
+# for i in range(len(text2)):
+#     for j in range(len(text)):
+#         if text[j]==text2[i]:
+#            num+=1
+# print(num)
 
 # result = a.count(b)
-a = list(input())
-b = list(input())
+a = list(input('Введите текст: '))
+b = list(input('Введите текст 2: '))
 cnt = 0
 for i in range(len(a)-len(b)+1):
     if a[i] == b[0]:
